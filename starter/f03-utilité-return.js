@@ -26,6 +26,17 @@ pour le réutiliser dans une autre fonction
 // Exécutez les deux fonctions
 
 // 1°) Créez la fonction calcule1
+function calcul1() {
+    return 2 + 3;
+}
+const resultat1 = calcul1();
+console.log(`Dans calcul1(): resultat1 = ${resultat1}`);
+
+function calcul2 () {
+    return calcul1() * 2;
+}
+const resultat2 = calcul2();
+console.log(`Dans calcul2(): resultat2 = ${resultat2}`);
 
 
 
