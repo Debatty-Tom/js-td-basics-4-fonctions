@@ -11,10 +11,32 @@ N.B. Faites deux versions :
    - en utilisant la syntaxe classique
    - en utilisant une arrow function
 */
-
+function calcMin(number1, number2) {
+    if (number1 < number2) {
+        console.log(`${number1} est le minimum`);
+    } else if (number1 > number2) {
+        console.log(`${number2} est le minimum`);
+    } else {
+        console.log(`${number1} est égal à ${number2}`);
+    }
+}
+calcMin(4.5, 5);
+calcMin(19, 9);
+calcMin(1, 1);
 // Syntaxe classique
 
-
+const calcMin1 = (number1, number2) => {
+    if (number1 < number2) {
+        console.log(`${number1} est le minimum`);
+    } else if (number1 > number2) {
+        console.log(`${number2} est le minimum`);
+    } else {
+        console.log(`${number1} est égal à ${number2}`);
+    }
+}
+calcMin1(4.5, 5);
+calcMin1(19, 9);
+calcMin1(1, 1);
 // Utilisation de la fonction calcMin pour calculer le minimum
 
 
