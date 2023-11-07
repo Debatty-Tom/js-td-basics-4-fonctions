@@ -13,10 +13,22 @@
 */
 
 const whatDoYouDo = function(job, firstName) {
+    if (job === 'teacher') {
+        return firstName + " teaches kids how to code";
+    } else if (job === 'driver') {
+        return firstName + " drives a cab in Lisbon";
+    } else if (job === 'designer') {
+        return firstName + " designs beautiful websites";
+    } else {
+        return firstName + " does something else";
+    }
+
     // Utilisez des conditions (if/else if) pour décrire le job de la personne en fonction de la valeur de 'job'.
     // Renvoyez la phrase appropriée en utilisant un return.
 };
-
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
 /*
 2. Utilisez cette fonction pour afficher dans la console ce que font :
     - John (teacher)
