@@ -16,7 +16,10 @@
 // et puis de déclarer une AUTRE fonction pour calculer le double de 128
 // etc. et ainsi de suite à chaque fois qu'on veut calculer le double d'un nouveau nombre 
 */
-
+function double3() {
+    console.log('le double de 3 est ');
+}
+double3();
 /*
 // Si on regarde toutes ces fonctions, elles ont toutes un canevas commun,
 // il y a une seule chose qui change : le nombre (3, 10, 24, 128). Tout le reste est identique.
@@ -36,3 +39,10 @@
                      - le double de 24 ;
                      - le double de 128.
 */
+
+function double(nombre) {
+    nombre = prompt('entrez un nombre pour savoir le double');
+    const result = nombre * 2;
+    console.log(`le double de ${nombre} est ${result}`);
+}
+double();

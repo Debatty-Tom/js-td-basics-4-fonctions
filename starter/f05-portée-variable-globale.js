@@ -25,6 +25,10 @@ Une variable globale est accessible de partout
 // 3°) Appeler affiche2
 // 4°) Expliquer ce qui se passe
 
+function affiche1() {
+    
+}
+
 // EXERCICE 2 : Variable globale
 // (on sort la variable nbre1 de la fonction affiche1)
 // 1°) Initialiser une variable nbre1 à la valeur 2
