@@ -46,6 +46,11 @@
 - Utilisez-la pour saluer Thomas dans la console
 */
 
+const salue = function (prenom) {
+    const message = 'bonjour';
+    return message + " " + prenom;
+}
+console.log(salue('thomas'));
 // Expression de fonction avec paramètre et return
 
 // Utilisation de la fonction pour saluer Thomas dans la console
