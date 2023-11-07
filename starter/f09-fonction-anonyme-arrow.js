@@ -24,6 +24,7 @@
 
 
 
+
 /*
 N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions fléchées :
 - Quand le corps de la fonction se limite à une seule ligne,
