@@ -16,7 +16,21 @@ FONCTIONS - PRÉPA 1 : Le carré d'un nombre
 
 // Déclarer carre1 pour qu'elle retourne le carré de x
 
+function carre1(valeur) {
+    const result = valeur * valeur;
+    console.log(result);
+}
+carre1(0);
+carre1(2);
+carre1(5);
 
+const carre2 = (valeur) => {
+    const result = valeur * valeur;
+    console.log(result);
+}
+carre2(0);
+carre2(2);
+carre2(5);
 // Calculer le carré de 0, 2 et 5 en utilisant carre1
 
 
