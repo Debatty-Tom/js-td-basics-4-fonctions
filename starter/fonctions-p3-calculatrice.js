@@ -13,7 +13,28 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 */
 
 // Déclaration de la fonction calculer
-
+const calculer = (a, sign, b) => {
+    switch (sign){
+        case '+':
+            return `${a} + ${b} = ${a + b}`;
+        case '-':
+            return `${a} - ${b} = ${a - b}`;
+        case '*':
+            return `${a} * ${b} = ${a * b}`;
+        case '/':
+            if (b !== 0) {
+                return `${a} / ${b} = ${a / b}`;
+            } else {
+                return "Division par zéro -> infinity";
+            }
+        default:
+            return 'ceci n\'est pas possible';
+    }
+}
+console.log(calculer(4,'+',6));
+console.log(calculer(4,'-',6));
+console.log(calculer(2,'*',0));
+console.log(calculer(12,'/',0));
 
 // Utilisation de la fonction calculer
 
